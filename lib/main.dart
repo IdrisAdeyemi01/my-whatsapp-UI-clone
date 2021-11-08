@@ -7,7 +7,6 @@ import 'package:letschat/pages/profile_info.dart';
 import 'pages/entering_page.dart';
 import 'pages/phone_number_1.dart';
 
-
 void main() {
   runApp(MyApp());
 }
@@ -17,17 +16,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        ChatPage.id: (context)=> ChatPage(),
+        ChatPage.id: (context) => ChatPage(),
         EnteringPage.id: (context) => EnteringPage(),
-        FileChecking.id : (context) => FileChecking(),
-        MainPage.id : (context) => MainPage(),
-        PhoneNumber1.id : (context) => PhoneNumber1(),
-        PhoneNumber2.id : (context) => PhoneNumber2(),
-        ProfileInfo.id : (context) => ProfileInfo()
+        FileChecking.id: (context) => FileChecking(),
+        MainPage.id: (context) => MainPage(),
+        PhoneNumber1.id: (context) => PhoneNumber1(),
+        PhoneNumber2.id: (context) => PhoneNumber2(),
+        ProfileInfo.id: (context) => ProfileInfo()
       },
       debugShowCheckedModeBanner: false,
-      initialRoute: ChatPage.id,
+      initialRoute: EnteringPage.id,
     );
   }
 }
-
